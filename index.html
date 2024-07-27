@@ -8,43 +8,46 @@
 </head>
 <body>
     <div id="left">
-        <div id="logo"></div>
+        <div id="left-logo-div">
+            <div id="left-logo"></div>
+        </div>
+        
     </div>
     <div id="right">
         <div id="top-right">
-            <p>This is not a real online service... But You can still fillout this form :) It just won't do anything</p>
-            <p>Do what you must.</p>
+            <p class="pre-text">This is not a real online service... But You can still fillout this form :) It just won't do anything</p>
+            <p class="pre-text">Do what you must.</p>
         </div>
         <div id="center-right">
-            <form action="">
+            <form action="" id="sign-up-form">
                 <div id="inputs-div">
                     <div id="firs-name-div">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="firstName" id="first-name">
+                        <input type="text" name="firstName" id="first-name" required>
                     </div>
                     <div id="last-name-div">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" name="lastName" id="last-name">
+                        <input type="text" name="lastName" id="last-name" required>
                     </div>
                     <div id="email-div">
                         <label for="email">EMAIL</label>
-                        <input type="text" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div id="phone-number-div">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="text" name="phoneNumber" id="phone-number">
+                        <input type="text" name="phoneNumber" id="phone-number" required>
                     </div>
                     <div id="password-div">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div id="confirm-password-div">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPassword" id="confirm-password">
+                        <input type="password" name="confirmPassword" id="confirm-password" required>
                     </div>
                 </div>
                 <div id="submit-div">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" id="submit">Create Account</button>
                 </div>
             </form>
         </div>
